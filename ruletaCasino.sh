@@ -21,8 +21,21 @@ function ctrl_c(){
 
 while getopts "m:t:h" arg; do
   case $arg in:
-    m)
-    t)
-    h)
+    m) money=$OPTARG;;
+    t) technique=$OPTARG;;
+    h) helpPanel;;
   esac
 done
+
+if [ $money ] && [ $technique ]; then
+  if [ "$technique" == "martingala" ]; then
+    martingala
+  elif [ "$technique" == "inverseLabroucher" ]; then
+    inverseLabroucher
+  else
+    echo -e "\n${redColour}[+] La tecnica introducida no existe.${endColour}"
+    helpPanel
+  fi 
+else
+  helpPanel
+fi
