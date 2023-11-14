@@ -1,5 +1,5 @@
 #!/bin/bash
-#Ruleta de casino, demuestra que la casa siempre gana, usando tecnica martingalay labroucherInversa
+#Ruleta de casino, demuestra que la casa siempre gana, usando tecnica martingala y labroucherInversa
 #Autor: JuanGarcia (aka.github. liandd)
 ##Colours
 greenColour="\e[0;32m"
