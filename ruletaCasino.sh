@@ -19,6 +19,10 @@ function ctrl_c(){
   tput cnorm && exit 1
 }
 
+function helpPanel(){
+    
+}
+
 while getopts "m:t:h" arg; do
   case $arg in:
     m) money=$OPTARG;;
