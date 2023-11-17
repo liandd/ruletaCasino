@@ -20,7 +20,10 @@ function ctrl_c(){
 }
 
 function helpPanel(){
-    
+  echo -e "\n\n${yellowColour}[+]${endColour}${grayColour} Uso:${endColour}${purpleColour} $0${endColor}\n"
+  echo -e "\t${blueColour}-m)${endColour}${grayColour} Dinero con el que se desea jugar${endColour}"
+  echo -e "\t${blueColour}-t)${endColour}${grayColour} Técnica a utilizar ${endColour}${purpleColour}(${endColour}${yellowColour}martingala${endColour}${blueColour}/${endColour}${yellowColour}inverseLabrouchere${endColour}${purpleColour})${endColour}\n"
+  exit 1
 }
 
 while getopts "m:t:h" arg; do
