@@ -26,6 +26,10 @@ function helpPanel(){
   exit 1
 }
 
+function martingala(){
+
+}
+
 while getopts "m:t:h" arg; do
   case $arg in:
     m) money=$OPTARG;;
